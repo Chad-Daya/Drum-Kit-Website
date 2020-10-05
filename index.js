@@ -5,13 +5,27 @@ for (var i = 0; i<numberOfDrumButtons; i++) {
 
 	document.querySelectorAll(".drum")[i].addEventListener("click", function () {
 	  
-		this.style.color = "white";
+		var buttonInnterHTML = this.innerHTML;
+
+		switch (buttonInnterHTML) {
+			case "w":
+			var audio = New Audio("sounds/tom-1.mp3");
+			audio.play();
+			break;
+
+			case "w":
+			var audio = New Audio("sounds/tom-1.mp3");
+			audio.play();
+
+
+
+			default:
+
+		}
+
 
 	
 
 }); 
 
 }
-
-// var audio = New Audio("sounds/tom-1.mp3");
-//	audio.play();
